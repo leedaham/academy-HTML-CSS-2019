@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그</title>
+</head>
+
+<body>
+    <h3>3.HTML 테이블 태그</h3>
+
+    <table border="1">
+        <tr> <!-- table row -->
+            <th>이름</th> <!-- table header -->
+            <th>휴대폰</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>김유신</td> <!-- table data -->
+            <td>010-1234-1111</td>
+            <td>김해</td>
+        </tr>
+        <tr>
+            <td>김춘추</td>
+            <td>010-1234-2222</td>
+            <td>경주</td>
+        </tr>
+        <tr>
+            <td>장보고</td>
+            <td>010-1234-3333</td>
+            <td>장흥</td>
+        </tr>
+        <tr>
+            <td>이순신</td>
+            <td>010-1234-4444</td>
+            <td>거제</td>
+        </tr>
+    </table>
+
+    <h4>테이블 셀 합병</h4>
+
+    <table border="1">
+        <tr>
+            <td colspan="2">1 x 1</td> <!-- colspan은 열 간 합병 -->
+            <td rowspan="2">1 x 3</td> <!-- rowspan은 행 간 합병 -->
+            <td>1 x 4</td>
+        </tr>
+        <tr>
+            <td rowspan="3">2 x 1</td>
+            <td>2 x 2</td>
+            <td>2 x 4</td>
+        </tr>
+        <tr>
+            <td colspan="3">3 x 2</td>
+        </tr>
+        <tr>
+            <td>4 x 2</td>
+            <td rowspan="2", colspan="2">4 x 3</td>
+        </tr>
+        <tr>
+            <td>5 x 1</td>
+            <td>5 x 2</td>
+        </tr>
+
+    </table>
+
+
+</body>
+<!-- Ctrl + 방향키 : 단어단위로 커서 옮기기 -->
+<!-- Shitr + Alt + 위 or 아래 : 위나 아래로 현재 행 복사하기 -->
+<!-- Ctrl + Alt + 위 or 아래 : 커서 한번에 몇줄씩 포함하기-->
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>4.형제 선택자</title>
+    <style>
+    .seoul + li + li{ /*같은 형제 중 seoul클래스에 li 2번 더했으니까, 서울 밑에 두번째인 대구에 적용됨. 안중요*/
+        color: red;
+    }
+
+    .seoul ~ li{ /*seoul클래스 뒤로부터 적용. 안중요*/
+        background: orange;
+    }
+    
+    </style>
+</head>
+<body>
+    <h3>4.형제 선택자</h3>
+    <ul>
+        <li class="seoul">서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li class="busan">부산</li>
+        <li>광주</li>
+    </ul>
+</body>
+</html>
