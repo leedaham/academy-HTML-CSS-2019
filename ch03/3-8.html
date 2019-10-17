@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>8.선택자 연습문제</title>
+    <style>
+       .city1 > li:nth-child(2n+1) {
+           color: blue;
+       }
+    
+       ul:nth-of-type(2) > li:nth-of-type(2n){
+           color: green;
+       }
+
+    </style>
+</head>
+<body>
+    <h3>8.선택자 연습문제</h3>
+
+    <h4>서울, 대구, 광주 파란색으로 출력</h4>
+    <ul class="city1">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+    </ul>
+
+    <h4>창원, 순천 녹색으로 출력</h4>
+    <ul>
+        <li>수원</li>
+        <li>창원</li>
+        <li>담양</li>
+        <li>순천</li>
+        <li>단양</li>
+    </ul>
+
+
+
+</body>
+</html>
