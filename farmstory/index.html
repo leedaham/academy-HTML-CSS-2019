@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>!!!</title>
+    <title>!!!</title> 
+    <!-- http://wppremium02.hubweb.net/ -->
     <style>
         /* 초기화 */
         * {
@@ -47,11 +48,27 @@
         }
 
         main > div.slider {
+            position: relative;
             height: 312px;
         }
+
+        .banner1 {position: absolute;}
+        #banner1-0 {top: 0; right: 0;}
+        #banner1-1 {top: 25px; right: 15px;}
+        #banner1-2 {top: 175px; right: 15px;}
+        #banner1-3 {top: 5px; right: 5px;}
+
         main > div.quick {
+            position: relative;
             height: 74px;
         }
+
+        .quick1 {position: absolute;}
+        #quick1-0 {top: 15px; left: 20px;}
+        .quick2 {position: absolute; right: 0;}
+        #quick2-0 {top: 15px; left: 510px;}
+
+
         main > div.latest {
             height: 186px;
         }
@@ -75,8 +92,19 @@
     <div id="wrapper">
         <header>header</header>
         <main>
-            <div class="slider">slider</div>
-            <div class="quick">quick</div>
+            <div class="slider">
+                <img id="main_slide" src="./img/main_slide_img1.jpg" alt="">
+                <img class="banner1" id="banner1-0" src="./img/main_banner_bg.jpg" alt="">
+                <img class="banner1" id="banner1-1" src="./img/main_banner_tit.png" alt="">
+                <img class="banner1" id="banner1-2" src="./img/main_banner_img.png" alt="">
+                <img class="banner1" id="banner1-3" src="./img/main_banner_txt.png" alt="">
+            </div>
+            <div class="quick">
+                <img class="quick1" src="./img/main_banner_sub1_bg.jpg" alt="">
+                <img class="quick1" id="quick1-0" src="./img/main_banner_sub1_tit.png" alt="">
+                <img class="quick2" src="./img/main_banner_sub2_bg.jpg" alt="">
+                <img class="quick2" id="quick2-0" src="./img/main_banner_sub2_tit.png" alt="">
+            </div>
             <div class="latest">latest</div>
             <div class="info">info</div>
         </main>
