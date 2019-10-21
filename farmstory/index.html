@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>!!!</title> 
+    <title>farmStory</title> 
     <!-- http://wppremium02.hubweb.net/ -->
     <style>
         /* 초기화 */
@@ -103,15 +103,42 @@
         }
 
         main > div.slider {
-            position: relative;
             height: 312px;
+            position: relative;
         }
 
-        .banner1 {position: absolute;}
-        #banner1-0 {top: 0; right: 0;}
-        #banner1-1 {top: 25px; right: 15px;}
-        #banner1-2 {top: 175px; right: 15px;}
-        #banner1-3 {top: 5px; right: 5px;}
+        main > .slider > ul {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main > .slider > ul > li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        main > .slider > ul > li:nth-child(1) {left: 0; top: 0;}
+        main > .slider > ul > li:nth-child(2) {left: 100%; top: 0;}
+        main > .slider > ul > li:nth-child(3) {left: 200%; top: 0;}
+        
+        main > .slider > .slogan {
+            position: absolute;
+            top: 30px; left: 30px;
+            z-index: 100;
+        }
+        main > .slider > .banner {
+            position: absolute;
+            right: 0; top: 0;
+            width: 230px; height: 100%;
+            background-image: url('./img/main_banner_bg.jpg');
+        }
+        main > .slider > .banner >img {position: absolute;}
+        main > .slider > .banner > img:nth-of-type(1) {right: 4px; top: 4px;}
+        main > .slider > .banner > img:nth-of-type(2) {left: 10px; top: 20px;}
+        main > .slider > .banner > img:nth-of-type(3) {left: 10px; bottom: 10px;}
 
         main > div.quick {
             position: relative;
@@ -155,10 +182,10 @@
         <header>
             <a href="" class="logo"><img src="./img/logo.png" alt="로고"></a>
             <p>
-                <a href="#">Home</a>
-                <a href="#">|  Login</a>
-                <a href="#">|  Join</a>
-                <a href="#">|  Contact us</a>
+                <a href="#">Home</a>|
+                <a href="#">Login</a>|
+                <a href="#">Join</a>|
+                <a href="#">Contact us</a>|
             </p>
             <img src="./img/head_txt_img.png" alt="3만원 이상 무료패송, 팜카드 10% 적립">
             <ul class="gnb">
@@ -171,11 +198,18 @@
         </header>
         <main>
             <div class="slider">
-                <img id="main_slide" src="./img/main_slide_img1.jpg" alt="">
-                <img class="banner1" id="banner1-0" src="./img/main_banner_bg.jpg" alt="">
-                <img class="banner1" id="banner1-1" src="./img/main_banner_tit.png" alt="">
-                <img class="banner1" id="banner1-2" src="./img/main_banner_img.png" alt="">
-                <img class="banner1" id="banner1-3" src="./img/main_banner_txt.png" alt="">
+                    <img src="./img/main_slide_img_tit.png" class="slogan" alt="사람과 자연을 사랑하는 팜스토리">
+                <ul>
+                    <li><img id="main_slide" src="./img/main_slide_img1.jpg" alt="슬라이드1"></li>
+                    <li><img id="main_slide" src="./img/main_slide_img2.jpg" alt="슬라이드2"></li>
+                    <li><img id="main_slide" src="./img/main_slide_img3.jpg" alt="슬라이드3"></li>
+                </ul>
+                <div class="banner">
+                    <img src="./img/main_banner_txt.png" alt="Grand Open">
+                    <img src="./img/main_banner_tit.png" alt="30% 할인 이벤트">
+                    <img src="./img/main_banner_img.png" alt="과일 이미지">
+                </div>
+                
             </div>
             <div class="quick">
                 <img class="quick1" src="./img/main_banner_sub1_bg.jpg" alt="">
