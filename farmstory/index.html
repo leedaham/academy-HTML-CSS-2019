@@ -174,19 +174,58 @@
             line-height: 18px;
         }
         
-
         main > div.info {
             height: 144px;
-            border: 1px solid red;
+            border-top: 2px solid #756c65;
+            overflow: hidden;
+            padding-top: 12px; padding-bottom: 15px;
             box-sizing: border-box;
         }
+        main > .info > article {
+            float: left;
+            height: 100%;
+        }
+        main > .info > article:nth-child(1) {
+            width: 39%;
+        }
+        main > .info > article:nth-child(2) {
+            width: 23%;
+            border-left: 1px solid #d7d7d7;
+            border-right: 1px solid #d7d7d7;
+            box-sizing: border-box;
+        }
+        main > .info > article:nth-child(3) {
+            width: 38%;
+        }
+
+        main > .info > article:nth-child(1) > div:nth-of-type(1) {
+            margin-top: 13px;
+            overflow: hidden;
+        }
+        main > .info > article:nth-child(1) > div:nth-of-type(1)  > * {
+            float: left;
+            margin-right: 18px;
+            font-size: 11px;
+            color: #666666;
+        }
+        main > .info > article:nth-child(1) > div:nth-of-type(2) {
+        margin-top: 12px;
+        }
+
+        main > .info > article:nth-child(2) > * {margin-left: 20px;}
+        main > .info > article:nth-child(2) > ul {
+            margin-top: 13px;
+            line-height: 16px;
+            font-size: 11px;
+            color: #666;
+            }
 
         /* footer */
         footer {
             width: 100%;
             height: 118px;
             margin-top: 10px;
-            border: 1px solid #c5bd9f;
+            border-top: 1px solid #c5bd9f;
             box-sizing: border-box;
         }
 
@@ -334,7 +373,36 @@
                     </table>
                 </article>
             </div>
-            <div class="info">info</div>
+            <div class="info">
+                <article>
+                    <img src="./img/main_sub2_cs_tit.png" alt="고객센터안내">
+                    <div>
+                        <img src="./img/main_sub2_cs_img.png" alt="전화기">
+                        <img src="./img/main_sub2_cs_txt.png" alt="1666-777">
+                        <ul>
+                            <li>평일: AM 09:00 ~ PM 06:00</li>
+                            <li>점심: PM 12:00 ~ PM 01:00</li>
+                            <li>토, 일요일, 공휴일 휴무</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/main_sub2_cs_bt1.png" alt="1:1교객문의"></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt2.png" alt="자주묻는질문"></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt3.png" alt="배송 조희"></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="./img/main_sub2_account_tit.png" alt="계좌안내">
+                    <ul>
+                        <li>기업은행 123-456789-01-01-012</li>
+                        <li>국민은행 01-1234-56789</li>
+                        <li>우리은행 123-456789-01-01-012</li>
+                        <li>하나은행 123-456789-01-01</li>
+                        <li>예 금 주 (주)더조은</li>
+                    </ul>
+                </article>
+                <article></article>
+            </div>
         </main>
         <footer>
             <img src="./img/footer_logo.png" alt="로고"">
