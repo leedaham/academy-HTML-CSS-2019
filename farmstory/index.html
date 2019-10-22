@@ -95,10 +95,9 @@
             width: auto;
             height: auto;
         }
+
         main > div {
             width: auto;
-            border: 1px solid red;
-            box-sizing: border-box;
             margin-top: 10px;
         }
 
@@ -106,13 +105,10 @@
             height: 312px;
             position: relative;
         }
-
         main > .slider > ul {
             position: relative;
             width: 100%;
             height: 100%;
-            border: 1px solid red;
-            box-sizing: border-box;
             overflow: hidden;
         }
         main > .slider > ul > li {
@@ -123,7 +119,6 @@
         main > .slider > ul > li:nth-child(1) {left: 0; top: 0;}
         main > .slider > ul > li:nth-child(2) {left: 100%; top: 0;}
         main > .slider > ul > li:nth-child(3) {left: 200%; top: 0;}
-        
         main > .slider > .slogan {
             position: absolute;
             top: 30px; left: 30px;
@@ -141,21 +136,49 @@
         main > .slider > .banner > img:nth-of-type(3) {left: 10px; bottom: 10px;}
 
         main > div.quick {
-            position: relative;
             height: 74px;
+            overflow: hidden;
         }
-
-        .quick1 {position: absolute;}
-        #quick1-0 {top: 15px; left: 20px;}
-        .quick2 {position: absolute; right: 0;}
-        #quick2-0 {top: 15px; left: 510px;}
-
+        main > .quick > a {
+            float: left;
+            display: block;
+            width: 50%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        main > .quick > a:nth-child(1) {background-image: url('./img/main_banner_sub1_bg.jpg');}
+        main > .quick > a:nth-child(2) {background-image: url('./img/main_banner_sub2_bg.jpg');}
 
         main > div.latest {
             height: 186px;
+            overflow: hidden;
         }
+        main > div.latest > article {
+            position: relative;
+            float: left;
+            width: 33.333%;
+            height: 100%;
+        }
+        main > .latest > article > * { /* article의 자식 모두 */
+            position: absolute;}
+        main > .latest > article > img:nth-of-type(1) {left: 0; top: 12px;}
+        main > .latest > article > img:nth-of-type(2) {left: 0; bottom: 25px;}
+        main > .latest > article > table {right: 16px; bottom: 22px; color: #6a6a6a;}
+        main > .latest > article > table tr > td:nth-child(2) {
+            display: block;
+            width: 126px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 18px;
+        }
+        
+
         main > div.info {
             height: 144px;
+            border: 1px solid red;
+            box-sizing: border-box;
         }
 
         /* footer */
@@ -212,12 +235,105 @@
                 
             </div>
             <div class="quick">
-                <img class="quick1" src="./img/main_banner_sub1_bg.jpg" alt="">
-                <img class="quick1" id="quick1-0" src="./img/main_banner_sub1_tit.png" alt="">
-                <img class="quick2" src="./img/main_banner_sub2_bg.jpg" alt="">
-                <img class="quick2" id="quick2-0" src="./img/main_banner_sub2_tit.png" alt="">
+                <a href="#"><img src="./img/main_banner_sub1_tit.png" alt="오늘의 식단"></a>
+                <a href="#"><img src="./img/main_banner_sub2_tit.png" alt="나도 요리사"></a>
+                
             </div>
-            <div class="latest">latest</div>
+            <div class="latest">
+                <article>
+                    <img src="./img/main_latest1_tit.png" alt="텃밭가꾸기">
+                    <img src="./img/main_latest1_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <img src="./img/main_latest2_tit.png" alt="귀농학교">
+                    <img src="./img/main_latest2_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <img src="./img/main_latest3_tit.png" alt="농장물이야기">
+                    <img src="./img/main_latest3_img.jpg" alt="이미지">
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자.</td>
+                            <td>19-10-22</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
             <div class="info">info</div>
         </main>
         <footer>
