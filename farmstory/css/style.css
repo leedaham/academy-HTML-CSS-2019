@@ -8,8 +8,30 @@ body {
     font: normal 12px '굴림';                 /*body 내의 기본 폰트 설정*/
 }
 
-ul, ol {list-style: none;}                    /* ul, ol 앞에 오는 데코에이션 초기화*/
-a {text-decoration: none; color: #111;}     /*링크타는 폰트 색 검정색으로 설정*/
+ul, ol {list-style: none;}                     /* ul, ol 앞에 오는 데코에이션 초기화*/
+a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색으로 설정*/
+
+#banner {
+    position: absolute;                        /* 마우스 스크롤 따라가고싶으면 position:fixed; 하면 됨. */
+    width: 60px;
+    height: 115px;
+    top: 150px; left: 50%;
+    margin-left: 495px;
+}
+#banner > div:nth-of-type(1) {
+    background-image: url('../img/float_banner_bg.png');
+}
+#banner > div:nth-of-type(1) > a {
+    margin-left: 4px;
+}
+#banner > div:nth-of-type(2) {
+    background-image: url('../img/float_banner_txt_bg.png');
+}
+#banner > div:nth-of-type(2) > a {
+    position: absolute;
+    bottom: 0;
+}
+
 /* wrapper */
 #wrapper {
     width: 980px;
