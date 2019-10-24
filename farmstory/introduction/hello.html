@@ -5,21 +5,38 @@
     <title>팜스토리::인사말</title>
     <link rel="stylesheet" href="/farmstory/css/style.css">
     <style>
-        .sub .content > p > p:nth-of-type(1) {
-            width: 760px;
-            height: 164px;
-            background-image: url('../img/sub_page1_article_bg.jpg');
-        }
-        .sub .content > p > p:nth-of-type(1) img {
-            margin-top: 30px;
-            margin-left: 7px;
-        }
-        .sub .content > p > p:nth-of-type(2) {
-            font-size: 11px;
-            color: #666666;
-        }
+    .sub.cate1 .content > div:nth-of-type(1) {
+        width: 100%;
+        height: auto;
+    }
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(1) {
+        width: 100%;
+        height: 164px;
+        background-image: url('../img/sub_page1_article_bg.jpg');
+    }
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(1) > img {
+        margin-top: 30px;
+        margin-left: 7px;
+    }
 
-
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(2) {
+        position: relative;
+    }
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(2) > p {
+        margin-top: 20px;
+        font-size: 11px;
+        color: #666666;
+        line-height: 17px;
+    }
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(2) > p > span {
+        font-size: 12px;
+        color: #a8d031;
+        font-weight: bold;
+    }
+    .sub.cate1 .content > div:nth-of-type(1) > div:nth-child(2) > img {
+        position: absolute;
+        top: 0; right: 0;
+    }
     </style>
 </head>
 <body>
@@ -63,24 +80,29 @@
                     </nav>
 
                     <!-- 컨텐츠 내용 시작 -->
-                    <p>
-                        <p>
+                    <div>
+                        <div>
                             <img src="/farmstory/img/sub_page1_article_txt.png" alt="건강한 먹거리를 위해 노력합니다.">
-                        </p>
-                        <p>
-                            항상 저희 팜스토리를 성원해 주시고 관심을 가져주시는 모든 분들께 감사의 인사를 드리며 <br>
-                            가정에 건강과 행복이 가득하시길 기원합니다. <br>
-                            <br>
-                            팜스토리는 신선하고 안전한 먹거리로 건강한 삶 만들기에 기여합니다. <br>
-                            보다 좋은 농산품을 공급하기 위해 화학비료를 쓰지 않는 건강한 흙에서 유기농업으로 정성을 다해 지은 농사를 통해 믿고 먹을 수 있는 먹거리 제공에 앞장서겠습니다. <br>
-                            <br>
-                            친환경 농장 <br>
-                            팜스토리는 경기도 이천에 위치한 10만평 규모의 유기농 제배단지입니다. <br>
-                            <br>
-                            친환경 캠페인 <br>
-                            팜스토리는 2차 포장재 사용을 줄임으로써 친환경적인 포장과, 친환경적인 소비문화 정착을 위해 노력합니다. <br>
-                        </p>
-                    </p>
+                        </div>
+                        <div>
+                            <p>
+                                항상 저희 팜스토리를 성원해 주시고 관심을 가져주시는 모든 분들께 감사의 인사를 드리며 <br>
+                                가정에 건강과 행복이 가득하시길 기원합니다.<br>
+                                <br>
+                                팜스토리는 신선하고 안전한 먹거리로 건강한 삶 만들기에 기여합니다.<br>
+                                보다 좋은 농산품을 공급하기 위해 화학비료를 쓰지 않는 건강한 흙에서 유기농업으로 정성을 다해<br>
+                                지은 농사를 통해 믿고 먹을 수 있는 먹거리 제공에 앞장서겠습니다.<br>
+                                <br>
+                                <span>친환경 농장</span><br>
+                                팜스토리는 경기도 이천에 위치한 10만평 규모의 유기농 제배단지입니다.<br>
+                                <br>
+                                <span>친환경 캠페인</span><br>
+                                팜스토리는 2차 포장재 사용을 줄임으로써 친환경적인 포장과, 친환경적인 소비문화 정착을<br>
+                                위해 노력합니다.<br>
+                            </p>
+                            <img src="/farmstory/img/sub_page1_article_family.png" alt="family"">
+                        </div>
+                    </div>
 
                     <!-- 컨텐츠 내용 끝 -->
                 </article>
