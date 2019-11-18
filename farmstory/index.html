@@ -6,32 +6,10 @@
     <!-- http://wppremium02.hubweb.net/ -->
     <link rel="stylesheet" href="/farmstory/css/style.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(function(){
-            var slides = $('.slider > ul > li');
-            var i = 0;    
-
-            setInterval(function(){
-            
-                slides.eq(i).animate({'left':'-100%'},{
-                    duration:1000,
-                    easing:'linear'
-                });
-                i++;
-                if(i==3){
-                    i=0
-                }
-                slides.eq(i).css('left', '100%').animate({'left':'0%'},{
-                    duration:1000,
-                    easing:'linear'
-                });
-
-            },1000*3);
-
-        });
-    </script>
+    <script src="./js/slider.js"></script>
 </head>
 <body>
     <div id="banner">
