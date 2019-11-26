@@ -285,7 +285,17 @@
 
         main > .poster {
             height: 274px;
+            margin: 70px 0;
         }
+        main > .poster ul {
+            overflow: hidden;
+        }
+        main > .poster ul li {
+            float: left;
+            margin-left: 10px;
+        }
+        main > .poster ul li:first-child {margin: 0;}
+
         main > .sponsor {
             height: 88px;
         }
