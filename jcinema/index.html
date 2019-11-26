@@ -4,223 +4,13 @@
     <meta charset="UTF-8">
     <title>제이시네마</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="/jcinema/css/style.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
-        /* initialize */
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
-
-        ul, ol {list-style: none;}
-        a {text-decoration: none; color :#111;}
-        body {
-            font-family: 'Nanum Gothic', sans-serif;
-            font-size: 12px;
-            font-weight: normal;
-            color: #555;
-        }
-
-        #wrapper {
-            width: 100%;
-            min-width: 980px;
-            height: auto;
-        }
-        /* top-banner */
-        #top-banner {
-            width: 100%;
-            height: 80px;
-            background: #00a4e3;
-        }
-        #top-banner > div {
-            position: relative;
-            width: 980px;
-            height: 100%;
-            margin: 0 auto;   
-        }
-        #top-banner > div > a.close {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-        }
         
-        
-
-        /* header */
-        header{
-            width: 100%;
-            height: auto;
-            box-sizing: border-box;
-        }
-        header > div {
-            width: 100%;
-        }
-        header > div > article {
-            width: 980px;
-            height: 100%;
-            margin: 0 auto;
-        }
-        header > .service {
-            height: 30px;
-            background: #efebdb;
-        }
-        header > .service article {
-            padding-top: 6px;
-            box-sizing: border-box;
-        }
-        header > .service p:nth-child(1) {float: left;}
-        header > .service p:nth-child(2) {float: right;}
-
-        header > .service p > a {}
-
-        header > .service p:nth-child(1) > a {
-            font-weight: 600;
-            color: #555;
-            margin-right: 16px;
-        }
-        header > .service p:nth-child(1) > a::before {
-            background-image: url('./img/ico_service.png');
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-        }
-        header > .service p:nth-child(1) > a:nth-child(1)::before {background-position: 0px;} 
-        header > .service p:nth-child(1) > a:nth-child(2)::before {background-position: -16px;} 
-        header > .service p:nth-child(1) > a:nth-child(3)::before {width: 20px; background-position: -32px;} 
-
-        header > .service p:nth-child(2) > a {
-            color: #6f6247;
-            font-size: 12px;
-            margin-left: 16px;
-        }
-        header > .service p:nth-child(2) > a:hover {
-            border-bottom: 1px solid #9d9580;
-        }
-        header > .logo {
-            height: 80px;
-        }
-        header > .logo > article {
-            position: relative;
-        }
-        header > .logo > article > a {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            margin-left: -283px;
-        }
-        
-        header > .gnb {
-            width: 100%;
-            height: 72px;
-            border-top: 2px solid #cdc197;
-            border-bottom: 1px solid #e9e4d2;
-            box-sizing: border-box;
-        }
-        header > .gnb ul {
-            display: inline-block;
-            width: 100%;
-            height: auto;
-            margin-top: 26px;
-        }
-        header > .gnb ul > li {
-            float: left;
-            width: 16.66%;
-            height: 16px;
-            border-right: 1px solid #dedede;
-            box-sizing: border-box;
-        }
-        header > .gnb ul > li:last-child {border: none;}
-
-        header > .gnb ul > li > a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            font-size: 16px;
-            color: #555;
-            text-align: center;
-        }
-        /* main */
-        main {
-            width: 100%;
-            height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
-        }
-
-        main > div {
-            width: 100%;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-        main > .slider {
-            height: 645px;
-        }
-        main > div > article {
-            width: 980px;
-            height: 100%;
-            border: 1px solid orange;
-            margin: 0 auto;
-        }
-        main > .slider > div {
-            width: 1450px;
-            height: 100%;
-            border: 1px solid orange;
-            margin: 0 auto;
-        }
-
-        main > .poster {
-            height: 274px;
-        }
-        main > .sponsor {
-            height: 88px;
-        }
-        main > .event {
-            height: 865px;
-        }
-        main > .quick {
-            height: 260px;
-        }
-        main > .notice {
-            height: 60px;
-        }
-
-        
-
-        /* footer */
-        footer{
-            width: 100%;
-            height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
-        }
-        footer > div {
-            width: 100%;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-        footer > div > article {
-            width: 980px;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-        footer > .banner {
-            height: 196px;
-        }
-        footer > .content {
-            height: 205px;
-        }
-        footer > .award {
-            height: 78px;
-        }
-
     </style>
 </head>
 <body>
@@ -267,9 +57,87 @@
         </header>
 
         <main>
+
             <div class="slider">
-                <div></div>
+                <div>
+                    <ul>
+                        <li><img src="./img/slider_banner_poster1.jpg" alt="겨울왕국2"></li>
+                    </ul>
+                    <div class="box-office">
+                        <div class="top">
+                            <img src="./img/tit_boxoffice.png" alt="BOX OFFICE">
+                            <span class="tab">
+                                <a href="#" class="on">예매순</a>
+                                <span>|</span>
+                                <a href="#">평점순</a>
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">1.</em>
+                                    <span class="grade gradeAll">전체</span>
+                                    <span class="tit">겨울왕국2</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">2.</em>
+                                    <span class="grade grade12">12</span>
+                                    <span class="tit">블랙머니</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">3.</em>
+                                    <span class="grade grade15">15</span>
+                                    <span class="tit">나를 찾아줘</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">4.</em>
+                                    <span class="grade grade18">18</span>
+                                    <span class="tit">181818-18</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">5.</em>
+                                    <span class="grade grade19">19</span>
+                                    <span class="tit">191919-19</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">6.</em>
+                                    <span class="grade gradeAll">all</span>
+                                    <span class="tit">겨울왕국2</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em class="rank">7.</em>
+                                    <span class="grade gradeAll">all</span>
+                                    <span class="tit">겨울왕국2</span>
+                                </a>
+                                <span>예매율<em>24.2%</em></span>
+                            </li>
+                        </ul>
+
+                        <a href="#">예매하기</a>
+
+                    </div>
+
+                </div>
             </div>
+
             <div class="poster">
                 <article></article>
             </div>
@@ -289,13 +157,41 @@
         
         <footer>
             <div class="banner">
-                <article></article>
+                <article>
+                    <a href="#"><img src="./img/footer_banner_hyundai.jpg" alt=""></a>
+                </article>
             </div>
             <div class="content">
-                <article></article>
+                <article>
+                    <img class="logo" src="./img/footer_logo.gif" alt="로고">
+                    <p>
+                        <a href="#">회원약관 |</a>
+                        <a href="#">개인정보초리방침 |</a>
+                        <a href="#">이메일무단수집거부 |</a>
+                        <a href="#">영상정보처리기기 운영·관리방침 |</a>
+                        <a href="#">J.POINT회원안내 |</a>
+                        <a href="#">배정기준 |</a>
+                        <a href="#">채용안내 |</a>
+                        <a href="#">광고/임대문의 |</a>
+                        <a href="#">기업정보 |</a>
+                        <a href="#">윤리경영 |</a><br>
+                        부산광역시 부산진구 신천대로 300 월드타워 27층 | 고객센터 1544-1234<br>
+                        대표이사 홍길동 | 사업자등록번호 123-12-12345 | 통신판매업신고번호 제1234호 | 개인정보 보호책임자 김춘추<br>
+                        COPTRIGHT© JCINEMA ALL RIGHT RESERVED.
+                    </p>
+                </article>
             </div>
             <div class="award">
-                <article></article>
+                <article>
+                    <img src="./img/footer_award1.jpg" alt=""/>
+                    <img src="./img/footer_award2.gif" alt=""/>
+                    <img src="./img/footer_award3.gif" alt=""/>
+                    <img src="./img/footer_award4.gif" alt=""/>
+                    <img src="./img/footer_award5.gif" alt=""/>
+                    <img src="./img/footer_award6.gif" alt=""/>
+                    <img src="./img/footer_award7.gif" alt=""/>
+                    <img src="./img/footer_award8.gif" alt=""/>
+                </article>
             </div>
         </footer>
     </div>
