@@ -4,20 +4,47 @@
     <meta charset="UTF-8">
     <title>제이시네마</title>
     <link rel="shortcut icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="/jcinema/css/style.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/jcinema/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <style>
-        
-    </style>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/topBanner.js"></script>
+    <script>
+        $(function(){
+
+            // 메인 슬라이더
+            var mainSlider = $('.slider .slides');
+            mainSlider.bxSlider({
+                'slideWidth': '1115px',
+                'auto':true,
+                'pause':'3000',
+                'controls':false
+            });
+            // 포스터 슬라이더
+            var posterSlider = $('.poster ul');
+            posterSlider.bxSlider({
+                slideWidth: '188px',
+                'minSlides': '5',
+                'maxSlides': '5',
+                'moveSlides': '1',
+                'pager':false,
+                'auto':true,
+                'pause':'3000'
+            });
+            // 메인 공지사항 롤링업
+
+        });
+    </script>
 </head>
 <body>
     <div id="wrapper">
         <div id="top-banner">
+            <canvas id="canvas"></canvas>
             <div>
-                <a href="#"><img src="./img/top_banner_poster1.jpg" alt="날씨의아이"></a>
+                <a href="#"><img id="topBannerImg" src="./img/top_banner_poster1.jpg" alt="날씨의아이"></a>
                 <a href="#" class="close"><img src="./img/banner-close.png" alt="닫기"></a>
             </div>
         </div>
@@ -45,7 +72,7 @@
             <div class="gnb">
                 <article>
                     <ul>
-                        <li><a href="#">예매</a></li>
+                        <li><a href="/jcinema/ticketing/choice-movie.html">예매</a></li>
                         <li><a href="#">영화</a></li>
                         <li><a href="#">영화관</a></li>
                         <li><a href="#">이벤트</a></li>
@@ -60,8 +87,12 @@
 
             <div class="slider">
                 <div>
-                    <ul>
+                    <ul class="slides">
                         <li><img src="./img/slider_banner_poster1.jpg" alt="겨울왕국2"></li>
+                        <li><img src="./img/slider_banner_poster2.jpg" alt="조커"></li>
+                        <li><img src="./img/slider_banner_poster3.jpg" alt="82년생김지영"></li>
+                        <li><img src="./img/slider_banner_poster4.jpg" alt="가장보통의연애"></li>
+                        <li><img src="./img/slider_banner_poster5.jpg" alt="터미네이터"></li>
                     </ul>
                     <div class="box-office">
                         <div class="top">
@@ -146,20 +177,62 @@
                         <li><a href="#"><img src="./img/poster_banner_img3.jpg" alt=""></a></li>
                         <li><a href="#"><img src="./img/poster_banner_img4.jpg" alt=""></a></li>
                         <li><a href="#"><img src="./img/poster_banner_img5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/poster_banner_img6.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/poster_banner_img7.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/poster_banner_img8.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/poster_banner_img9.jpg" alt=""></a></li>
                     </ul>
                 </article>
             </div>
-            <div class="sponser">
-                <article></article>
+            <div class="sponsor">
+                <article>
+                    <ul>
+                        <li><a href="#"><img src="./img/sponsor_img1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img6.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img7.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="./img/sponsor_img8.jpg" alt=""></a></li>
+                    </ul>
+                </article>
             </div>
             <div class="event">
-                <article></article>
+                <article>
+                    <h1>Event</h1>
+                    <div>
+                        <a href="#"><img src="./img/event_img1.jpg" alt="이미지1"></a>
+                        <a href="#"><img src="./img/event_img2.jpg" alt="이미지2"></a>
+                        <a href="#"><img src="./img/event_img3.jpg" alt="이미지3"></a>
+                        <a href="#"><img src="./img/event_img4.jpg" alt="이미지4"></a>
+                        <a href="#"><img src="./img/event_img5.jpg" alt="이미지5"></a>
+                        <a href="#"><img src="./img/event_img6.jpg" alt="이미지6"></a>
+                        <a href="#"><img src="./img/event_img7.jpg" alt="이미지7"></a>
+                    </div>
+                </article>
             </div>
             <div class="quick">
-                <article></article>
+                <article>
+                    <a href="#"><img src="./img/quick_menu1.gif" alt="퀵1"></a>
+                    <a href="#"><img src="./img/quick_menu2.gif" alt="퀵2"></a>
+                    <a href="#"><img src="./img/quick_menu3.gif" alt="퀵3"></a>
+                    <a href="#"><img src="./img/quick_menu4.gif" alt="퀵4"></a>
+                    <a href="#"><img src="./img/quick_menu5.gif" alt="퀵5"></a>
+                </article>
             </div>
             <div class="notice">
-                <article></article>
+                <article>
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li><a href="#">시스템 점검안내</a></li>
+                        <li><a href="#">개인정보 이용내역 안내</a></li>
+                        <li><a href="#">개인정보 처리방침 개정안내</a></li>
+                        <li><a href="#">씨티카드 시스템 점검 안내</a></li>
+                        <li><a href="#">환불규정 안내</a></li>
+                    </ul>
+                    <a class="more" href="#">MORE</a>
+                </article>
             </div>
         </main>
         

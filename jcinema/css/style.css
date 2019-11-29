@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gupter&display=swap');
         /* initialize */
         * {
             margin: 0;
@@ -26,6 +27,10 @@
             height: 80px;
             background: #00a4e3;
         }
+        #top-banner > canvas {
+            display: none;
+        }
+
         #top-banner > div {
             position: relative;
             width: 980px;
@@ -150,10 +155,28 @@
         main > .slider {
             height: 645px;
         }
+
+        main > .slider .bx-wrapper {
+            float: left;
+            box-shadow: 0 0 5px #ccc;
+            border: 5px solid #fff;
+            background: #fff;
+        }
+
+        main .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+            position: absolute;
+            bottom: 16px;
+            width: 100%;
+            color
+        }
+        main .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+            background: #fff;
+        }
+        
+
         main > div > article {
             width: 980px;
             height: 100%;
-            border: 1px solid orange;
             margin: 0 auto;
         }
         main > .slider > div {
@@ -161,18 +184,18 @@
             height: 100%;
             margin: 0 auto;
         }
-        .slider > div > ul > li > img {
+        main > .slider > div > ul > li > img {
             float: left;
         }
 
 
-        .box-office {
+        main .box-office {
             float: right;
             width: 315px;
             height: 645px;
         }
 
-        .box-office > a {
+        main .box-office > a {
             display: inline-block;
             position: absolute;
             width: 315px;
@@ -184,19 +207,19 @@
             padding-top: 25px;
             box-sizing: border-box;
         }
-        .box-office > ul {
+        main .box-office > ul {
             height: 398px;
             padding-top: 30px;
         }
 
-        .box-office > ul > li {
+        main .box-office > ul > li {
             position: relative;
             width: 315px;
             height: 54px;
             padding: 11px 10px 0px;
             box-sizing: border-box;
         }
-        .box-office > ul > li > a {
+        main .box-office > ul > li > a {
             display: inline-block;
             position: relative;
             width: 193px;
@@ -204,7 +227,7 @@
             padding-left: 5px;
             box-sizing: border-box;
         }
-        .box-office > ul > li > span {
+        main .box-office > ul > li > span {
             float: right;
             position: absolute;
             top: 20px;
@@ -214,7 +237,7 @@
             box-sizing: border-box;
         }
 
-        .rank {
+        main .rank {
             position: absolute;
             top: 0px; left: 5px;
             color: #1a1917;
@@ -226,7 +249,7 @@
             box-sizing: border-box;
         }
         
-        .grade {
+        main .grade {
             position: absolute;
             display: inline-block;
             overflow: hidden;
@@ -236,13 +259,13 @@
             width: 20px;
             height: 20px;
         }
-        .gradeAll {background-position: 0px;}
-        .grade12 {background-position: -21px;}
-        .grade15 {background-position: -42px;}
-        .grade18 {background-position: -63px;}
-        .grade19 {background-position: -84px;}
+        main .gradeAll {background-position: 0px;}
+        main .grade12 {background-position: -21px;}
+        main .grade15 {background-position: -42px;}
+        main .grade18 {background-position: -63px;}
+        main .grade19 {background-position: -84px;}
 
-        .tit {
+        main .tit {
             position: absolute;
             top: 7px; left: 57px;
             color: #1a1917;
@@ -250,35 +273,35 @@
             font-weight: bold;
         }
 
-        .top {
+        main .top {
             position: relative;
             width: 315px;
             height: 153px;
             box-sizing: border-box;
             background: #2a2e33;
         }
-        .top > img {
+        main .top > img {
             position: absolute;
             top: 50px;
             left: 55px;
         }
-        .top > .tab {
+        main .top > .tab {
             position: absolute;
             top: 95px;
             left: 105px;
             color: #555555;
         }
-        .top a {
+        main .top a {
             color: #ffffff;
             font-size: 14px;
         }
-        .tab > span {
+        main .tab > span {
             padding-right: 10px;
             padding-left: 10px;
             box-sizing: border-box;
         }
 
-        .on {
+        main .on {
             border-bottom: 1px solid #7f8285;
         }
             
@@ -287,6 +310,24 @@
             height: 274px;
             margin: 70px 0;
         }
+        main > .poster .bx-wrapper {
+            border: none;
+            box-shadow: none;
+            max-width: 980px !important;
+        }
+        main > .poster .bx-wrapper .bx-controls-direction a {
+            height: 38px;
+        }
+
+        main > .poster .bx-wrapper .bx-prev {
+            left: -28px;
+            background: url('../img/btn_prev_on.png') no-repeat;
+        }
+        main > .poster .bx-wrapper .bx-next {
+            right: -48px;
+            background: url('../img/btn_next_on.png') no-repeat;
+        }
+
         main > .poster ul {
             overflow: hidden;
         }
@@ -298,15 +339,113 @@
 
         main > .sponsor {
             height: 88px;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e3e1d6;
+            box-sizing: border-box;
         }
+        main > .sponsor ul {
+            overflow: hidden;
+            margin-top: 22px;
+        }
+        main > .sponsor ul > li {
+            float: left;
+            margin-left: 48.5px;    
+        }
+        main > .sponsor ul > li:first-child { margin: 0;}
+
+
         main > .event {
             height: 865px;
+            background-image: url('../img/bg_pattern.png');
+            background-repeat: repeat;
         }
+        main > .event > article {
+            padding-top: 20px;
+            
+        }
+        main > .event h1 {
+            display: block;
+            font-family: 'Gupter', serif;
+            font-style: italic;
+            color: #231f20;
+            font-size: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        main > .event img {
+            padding-left: 11px;
+            padding-bottom: 11px;
+        }
+        main > .event div > a {
+            float: left;
+        }
+
+        main > .event div > a:nth-child(4) {
+            clear: left;
+        }
+        main > .event div > a:nth-child(5) {
+            margin-top: -130px;
+        }
+        main > .event div > a:nth-child(6) {
+            margin-top: -55px;
+        }
+        main > .event div > a:nth-child(7) {
+            margin-top: -219px;
+        }
+
         main > .quick {
             height: 260px;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #dedede;
         }
+        main > .quick > article {
+            padding-top: 50px;
+            box-sizing: border-box;
+            text-align: center;    
+        }
+        main > .quick ul > li {
+            float: left;
+            margin: 0 4px;
+        }
+
         main > .notice {
             height: 60px;
+        }
+        main > .notice > article {
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        main > .notice h2 {
+            float: left;
+        }
+        main > .notice .more {
+            float: right;
+            display: inline-block;
+            height: 13px;
+            margin-top: 3px;
+            margin-right: 40px;
+            padding-right: 18px;
+            background: url('../img/btn_more.png') no-repeat 100% 0;
+            font-size: 11px;
+            color: #666;
+            line-height: 13px;
+        }
+        main > .notice ul {
+            float: left;         
+            width: 740px;
+            height: 20px;
+            margin-left: 42px;
+            line-height: 20px;            
+            overflow: hidden;
+        }
+        main > .notice ul > li > a {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 20px;
+            font-size: 14px;
+            color: #666;
         }
 
         

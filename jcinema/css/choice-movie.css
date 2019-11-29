@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color :#111;}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+}
+/* 서브 페이지 */
+#sub {
+}
+
+#sub > .sub-menu {
+    height: 40px;
+    background: #dad2b4;
+}
+#sub > div {}
+
+/* 예매 */
+
+#sub.choice-movie {
+
+    width: 100%;
+    min-height: 100px;
+    background: #f9f6ec;
+}
+#sub.choice-movie > div > article {
+    padding-top: 30px;
+    position: relative;
+    
+}
+#sub.choice-movie .side-banner {
+    width: 160px;
+    height: 300px;
+    position: absolute;
+}
+#sub.choice-movie .side-banner.left {
+    
+    top: 126px;
+    left: -165px;
+}
+#sub.choice-movie .side-banner.right {
+    top: 126px;
+    right: -165px;
+}
+
+#sub.choice-movie .theater {
+    width: 980px;
+    margin: 0 auto;
+    
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar {
+    width: 100%;
+    height: 96px;
+    padding-left: 83px;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar > nav {
+    position: relative;
+    height: 34px;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar > nav > .month {
+    
+    position: absolute;
+    width: 38px;
+    font-size: 34px;
+    margin: -12px 15px 0 0;
+    border-bottom: 2px solid #231f20;
+    font-family: 'Linux Libertine';
+    color: #231f20;
+    font-weight: bold;
+}
+#sub.choice-movie .theater .calendar > nav > .year {
+    position: absolute;
+    padding: 0 40px;
+    text-align: left;
+    font-weight: bold;
+    top: 14px;
+    left: 10px;
+    color: #666;
+    font-size: 12px;
+}
+#sub.choice-movie .theater .calendar > div {}
+#sub.choice-movie .theater .calendar ul {}
+#sub.choice-movie .theater .calendar ul > li {
+    border-bottom: none;
+    display: inline-block;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+#sub.choice-movie .theater .calendar ul > li.on span {
+    background: #231f20;
+    color: #fff;
+    border-radius: 15px;
+}
+#sub.choice-movie .theater .calendar ul > li.day a {}
+#sub.choice-movie .theater .calendar ul > li.sat a {
+    color: #407bbb;
+}
+#sub.choice-movie .theater .calendar ul > li.sun a {
+    color: #cd190b;
+}
+
+#sub.choice-movie .theater .calendar ul a {
+    width: 30px;
+    padding: 0 15px;
+    text-align: center;
+}
+#sub.choice-movie .theater .calendar ul em {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 5px;
+    font-style: normal;
+}
+#sub.choice-movie .theater .calendar ul span {
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 예매 - 내용부 공통 */
+#sub.choice-movie > .theater section {
+    min-height: 300px;
+    background: #fff;
+    border-top: 2px solid #23333b;
+}
+#sub.choice-movie > .theater section > div {
+    overflow: hidden;
+}
+#sub.choice-movie > .theater section > div > div {}
+#sub.choice-movie > .theater section > div h3   {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    color: #231f20;
+}
+#sub.choice-movie > .theater section > div h4   {
+    color: #231f20;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+}
+#sub.choice-movie > .theater section > div span {}
+#sub.choice-movie > .theater section > div p    {
+}
+#sub.choice-movie > .theater section > div a.login {}
+#sub.choice-movie > .theater section > div a.login::before {}
+#sub.choice-movie > .theater section > div > article {}
+#sub.choice-movie > .theater section > div > article > h4 {}
+/* 예매 - 왼쪽 영화관 */
+#sub.choice-movie > .theater section > .region {
+    float: left;
+    width: 600px;
+}
+#sub.choice-movie > .theater section > .region ul{}
+#sub.choice-movie > .theater section > .region ul > li {
+    float: left;
+    width: 128px;
+    height: 40px;
+    margin-right: 9px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .region ul > li > a {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    line-height: 40px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .region ul > li.active > a {
+
+}
+#sub.choice-movie > .theater section > .region ul ol {}
+#sub.choice-movie > .theater section > .region ul ol.on {}
+#sub.choice-movie > .theater section > .region ul ol > li {}
+#sub.choice-movie > .theater section > .region ul ol > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #efefef;
+    background: #efefef;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box
+}
+#sub.choice-movie > .theater section > .region ul ol > li.chk > a {}
+/* 예매 - 오른쪽 영화순위 */
+#sub.choice-movie > .theater section > .rank {
+    float: right;
+    width: 378px;
+    border-left: 1px solid #c0c0c0;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .rank a.on {}
+#sub.choice-movie > .theater section > .rank ul {}
+#sub.choice-movie > .theater section > .rank ul > li > a {}
+#sub.choice-movie > .theater section > .rank ul .grade {}
+#sub.choice-movie > .theater section > .rank ul .gradeAll {}
+#sub.choice-movie > .theater section > .rank ul .grade12  {}
+#sub.choice-movie > .theater section > .rank ul .grade15  {}
+#sub.choice-movie > .theater section > .rank ul .grade18  {}
+#sub.choice-movie > .theater section > .rank ul .grade19  {}
+#sub.choice-movie > .theater section > .rank ul .tit {}
+/* 예매 - 상영시간 */
+#sub.choice-movie > .showtime {}
+#sub.choice-movie > .showtime .info {}
+#sub.choice-movie > .showtime .info > em {}
+#sub.choice-movie > .showtime .info > span {}
+#sub.choice-movie > .showtime .info > .infoDate {}
+#sub.choice-movie > .showtime .info > .infoTheater {}
+#sub.choice-movie > .showtime .info > .infoMovie {}
+#sub.choice-movie > .showtime section {}
+#sub.choice-movie > .showtime section > h1 {}
+#sub.choice-movie > .showtime section > h1 > span {}
+#sub.choice-movie > .showtime section > .nodata {}
+#sub.choice-movie > .showtime .banner {}
