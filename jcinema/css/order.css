@@ -1,0 +1,153 @@
+/* 예매 - 주문결제 페이지(order-confirm.html) */
+#sub.order-confirm {}
+#sub.order-confirm h1 {
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: #231f20;
+}
+
+#sub.order-confirm > section {
+    
+}
+#sub.order-confirm > section:nth-of-type(1) {
+    background: #f9f6ec;
+}
+#sub.order-confirm > section:nth-of-type(2) {
+    padding: 40px;
+}
+#sub.order-confirm > section:nth-of-type(3) {
+    background: #dad2b4;
+}
+#sub.order-confirm > section:nth-of-type(4) {
+    background: #282e34;
+}
+
+#sub.order-confirm > section > div {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+#sub.order-confirm > section > .movie-info {
+    height: 374px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+#sub.order-confirm .movie-info strong {
+    font-size: 18px;
+    font-weight: normal;
+    color: #231f20;
+}
+#sub.order-confirm .movie-info h2 {
+    float: right;
+    font-size: 24px;
+    color: #231f20;
+    line-height: 96px;
+}
+#sub.order-confirm .movie-info i {
+    font-style: normal;
+    font-size: 14px;
+}
+#sub.order-confirm .movie-info h3 {
+    float: right;
+    font-size: 30px;
+    color: #231f20;
+}
+#sub.order-confirm > section > .movie-info img {
+    float: left;
+    width: 65px;
+}
+#sub.order-confirm > section > .movie-info > article > div:nth-of-type(1) {
+    width: 100%;
+    height: 135px;
+    background: #fff;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+}
+
+#sub.order-confirm > section > .movie-info > article > div:nth-of-type(2) {
+    width: 100%;
+    height: 80px;
+    background: #dad2b4;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+#sub.order-confirm .movie-info table {
+    float: left;
+    margin-left: 26px;
+    text-align: left;
+}
+#sub.order-confirm .movie-info table tr > .tit {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #231f20;
+}
+#sub.order-confirm .movie-info table tr > th {
+    width: 80px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    line-height: 19px;
+}
+#sub.order-confirm .movie-info table tr > td {
+    width: 220px;
+    color: #231f20;
+    font-size: 14px;
+}
+
+#sub.order-confirm > section > .dc-coupon {}
+#sub.order-confirm > section > .dc-coupon > article {
+    display: none;
+    width: 100%;
+    border: 1px solid #dedede;
+    border-top: none;
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sub.order-confirm > section > .dc-coupon > article.on {
+    display: block;
+}
+#sub.order-confirm > section > .dc-coupon a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding: 25px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #231f20;
+    background-color: #f5f5f5;
+    background-image: url(../img/btn_order_off.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    border: 1px solid #dedede;
+    color: #000;
+    box-sizing: border-box;
+}
+#sub.order-confirm > section > .dc-coupon a.on {
+    color: #dad2b4;
+    background: #282e34;
+    background-image: url(../img/btn_order_on.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+} 
+#sub.order-confirm > section > .back {
+    height: 50px;
+}
+#sub.order-confirm > section > .back a {
+    display: inline-block;
+    height: 16px;
+    margin-top: 16px;
+    padding-left: 29px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    background: url(../img/btn_total_prev.png) no-repeat;
+}
+
+#sub.order-confirm > section > .total-price {}

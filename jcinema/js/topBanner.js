@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     // 상단 배너광고 랜덤 출력
     var rand = Math.ceil(Math.random()*6);
-    var imgPath = "./img/top_banner_poster"+rand+".jpg";
+    var imgPath = "/jcinema/img/top_banner_poster"+rand+".jpg";
     
     topBannerImg.attr('src', imgPath);
 

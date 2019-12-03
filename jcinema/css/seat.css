@@ -1,0 +1,346 @@
+/* 예매 - 인원/좌석선택 페이지 */
+#sub.choice-seat {}
+#sub.choice-seat > section {
+    width: 100%;
+    box-sizing: border-box;
+}
+#sub.choice-seat > section:nth-of-type(1) {
+    height: 262px;
+    padding: 50px 0 30px;
+    background: #f9f6ec;
+    box-sizing: border-box;
+}
+#sub.choice-seat > section:nth-of-type(2) {background: #ffffff;}
+#sub.choice-seat > section:nth-of-type(3) {border-top: 1px solid #e0e0e0;}
+#sub.choice-seat > section:nth-of-type(4) {background: #cdc197;}
+#sub.choice-seat > section:nth-of-type(5) {background: #33373a;}
+
+#sub.choice-seat > section > div {
+    width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#sub.choice-seat > section > .seat-setting {
+    
+}
+#sub.choice-seat > section > .seat-setting > h1 {
+    float: left;
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: #231f20;
+}
+#sub.choice-seat > section > .seat-setting > div {
+    clear: left;
+    padding: 0 28px 0 30px;
+    background: #ffffff;
+}
+#sub.choice-seat > section > .seat-setting  span {
+    display: inline-block;
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #231f20;
+}
+#sub.choice-seat > section > .seat-setting img {
+}
+#sub.choice-seat > section > .seat-setting em {
+    float: right;
+    font-size: 13px;
+    color: #777;
+    font-style: normal;
+}
+#sub.choice-seat > section > .seat-setting > div > div {
+    padding: 20px 0;
+}
+#sub.choice-seat > section > .seat-setting > div > div:nth-of-type(1) {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0 10px;
+}
+#sub.choice-seat > section > .seat-setting  select {
+    width: 70px;
+    margin-right: 36px;
+    padding: 6px 0 6px 10px;
+    border: 1px solid #b9b9b9;
+    color: #666;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+#sub.choice-seat > section > .seat-setting .adult > option {
+    
+    display: block;
+    padding: 6px 0 6px 10px;
+    border: 1px solid #b9b9b9;
+    color: #666;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+
+#sub.choice-seat > section > .seat-area {
+    min-height: 450px;
+}
+#sub.choice-seat > section > .seat-area > .screen {
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-image: url(../img/bg_screen.gif);
+    text-align: center;
+    font-size: 20px;
+    color: #231f20;
+}
+#sub.choice-seat > section > .seat-area  article {
+    width: 100%;
+    height: auto;
+    background: #f9f8f3;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#sub.choice-seat > section > .seat-area  article > ul > li {
+    overflow: hidden;
+}
+#sub.choice-seat > section > .seat-area  article > ul {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#sub.choice-seat > section > .seat-area  article .tit {
+    float: left;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 23px;
+}
+#sub.choice-seat > section > .seat-area  article a {
+    float: left;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: #848484;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    line-height: 23px;
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+#sub.choice-seat > section > .seat-area p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 26px;
+    line-height: 18px;
+    
+}
+#sub.choice-seat > section > .seat-area ol {
+    float: right;
+    margin: 26px 0;
+}
+
+#sub.choice-seat > section > .seat-area ol > li {
+    float: left;
+    margin-left: 27px;
+    padding-left: 22px;
+    font-size: 13px;
+    color: #666;
+    line-height: 14px;
+    
+}
+#sub.choice-seat .seat-area > ol > li > i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    margin-bottom: -3px;
+    background-image: url(../img/sprite_bg_seat.png);
+}
+#sub.choice-seat .seat-area > ol > li:first-child > i {
+    width: 32px;
+    margin-bottom: -6px;
+    background-position-x: 32px;
+}
+#sub.choice-seat .seat-area > ol > li:nth-child(2) > i {
+    background-position-x: 0px;
+}
+#sub.choice-seat .seat-area > ol > li:nth-child(3) > i {
+    background-position-x: -14px;
+}
+#sub.choice-seat .seat-area > ol > li:nth-child(4) > i {
+    background-position-x: -28px;
+}
+#sub.choice-seat .seat-area > ol > li:nth-child(5) > i {
+    background-position-x: -42px;
+}
+
+
+#sub.choice-seat > section > .seat-info {
+    height: 38px;
+}
+#sub.choice-seat .seat-info > ol > li {
+    float: left;
+    margin: 10px 34px;
+    line-height: 18px;
+}
+#sub.choice-seat .seat-info > ol > li > i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    margin-bottom: -3px;
+    background-image: url(../img/sprite_bg_seat.png);
+    background-position-y: 14px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(1) > i {
+    background-position-x: 0px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(2) > i {
+    background-position-x: -14px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(3) > i {
+    background-position-x: -28px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(4) > i {
+    background-position-x: -42px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(5) > i {
+    background-position-x: -56px;
+}
+#sub.choice-seat .seat-info > ol > li:nth-child(6) > i {
+    background-position-x: -70px;
+}
+#sub.choice-seat > section > .back-and-pay {
+    height: 50px;
+}
+
+#sub.choice-seat > section > .back-and-pay > a:nth-of-type(1) {
+    float: left;
+    margin-top: 16px;
+    padding-left: 29px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: bold;
+    background:  #cdc197;
+    text-align: center;
+    background: url(../img/btn_total_prev.png) no-repeat;
+}
+#sub.choice-seat > section > .back-and-pay > a:nth-of-type(2) {
+    float: right;
+    width: 115px;
+    height: 28px;
+    margin-top: 8px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #b2a168;
+    background: #f5f3ea;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+#sub.choice-seat > section > .total-info {
+    height: 198px;
+}
+#sub.choice-seat > section > .total-info div {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    padding: 16px;
+    border-right: 1px solid #515151;
+    box-sizing: border-box;
+}
+#sub.choice-seat > section > .total-info div > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #cdc197;
+    font-size: 14px;
+}
+#sub.choice-seat > section > .total-info div:nth-of-type(1) {
+    border-left: 1px solid #515151;
+}
+#sub.choice-seat > section > .total-info .poster {
+    float: left;
+    width: 65px;
+}
+#sub.choice-seat > section > .total-info .movie-info {
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+}
+#sub.choice-seat .total-info .movie-info > strong {
+    display: block;
+}
+#sub.choice-seat .total-info .movie-info > b {
+    display: block;
+    font-weight: normal;
+    margin-top: 16px;
+}
+#sub.choice-seat .total-info .movie-info > em {
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 36px;
+}
+
+#sub.choice-seat > section > .total-info div:nth-of-type(2) {}
+#sub.choice-seat .total-info table tr > td:nth-child(1) {
+    color: #a7a9ac;
+    font-size: 14px;
+    line-height: 22px;
+}
+#sub.choice-seat .total-info table tr > td:nth-child(2) {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+#sub.choice-seat .total-info h2 {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #fff;
+}
+#sub.choice-seat > section > .total-info div:nth-of-type(3) {}
+
+#sub.choice-seat .total-info .right {
+    float: right;
+    margin-left: 152px;
+}
+
+footer {
+    display: block;
+}
+footer > .banner1 {
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer > .banner1 img{
+    margin-top: -1px;
+}
+footer > .banner2 {
+    height: 196px;
+    margin-top: 64px;
+    background-color: rgb(0, 92, 185);
+    
+}
+footer > .banner2 a {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+}
+footer > .banner2 img {
+    position: absolute;
+    top: -44px;
+    left: 462px;
+}

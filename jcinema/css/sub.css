@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color :#111;}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+}
+/* 서브 페이지 */
+#sub {
+}
+
+#sub > .sub-menu {
+    height: 40px;
+    background: #dad2b4;
+}
+#sub > div {}
+
+/* 예매 */
+
+#sub.choice-movie {
+
+    width: 100%;
+    min-height: 100px;
+    background: #f9f6ec;
+}
+#sub.choice-movie > div > article {
+    
+    position: relative;
+    
+}
+#sub.choice-movie .side-banner {
+    width: 160px;
+    height: 300px;
+    position: absolute;
+}
+#sub.choice-movie .side-banner.left {
+    
+    top: 126px;
+    left: -165px;
+}
+#sub.choice-movie .side-banner.right {
+    top: 126px;
+    right: -165px;
+}
+
+#sub.choice-movie .theater {
+    width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar {
+    width: 100%;
+    height: 96px;
+    padding-left: 83px;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar > nav {
+    position: relative;
+    height: 34px;
+    box-sizing: border-box;
+}
+#sub.choice-movie .theater .calendar > nav > .month {
+    
+    position: absolute;
+    width: 38px;
+    font-size: 34px;
+    margin: -12px 15px 0 0;
+    border-bottom: 2px solid #231f20;
+    font-family: 'Linux Libertine';
+    color: #231f20;
+    font-weight: bold;
+}
+#sub.choice-movie .theater .calendar > nav > .year {
+    position: absolute;
+    padding: 0 40px;
+    text-align: left;
+    font-weight: bold;
+    top: 14px;
+    left: 10px;
+    color: #666;
+    font-size: 12px;
+}
+#sub.choice-movie .theater > article {
+    padding-top: 30px;
+}
+#sub.choice-movie .theater .calendar ul {}
+#sub.choice-movie .theater .calendar ul > li {
+    border-bottom: none;
+    display: inline-block;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+#sub.choice-movie .theater .calendar ul > li.on span {
+    background: #231f20;
+    color: #fff;
+    border-radius: 15px;
+}
+#sub.choice-movie .theater .calendar ul > li.day a {}
+#sub.choice-movie .theater .calendar ul > li.sat a {
+    color: #407bbb;
+}
+#sub.choice-movie .theater .calendar ul > li.sun a {
+    color: #cd190b;
+}
+
+#sub.choice-movie .theater .calendar ul a {
+    width: 30px;
+    padding: 0 15px;
+    text-align: center;
+}
+#sub.choice-movie .theater .calendar ul em {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 5px;
+    font-style: normal;
+}
+#sub.choice-movie .theater .calendar ul span {
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 예매 - 내용부 공통 */
+#sub.choice-movie > .theater section {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #23333b;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+#sub.choice-movie > .theater section > div {
+    overflow: hidden;
+}
+
+#sub.choice-movie > .theater section > div > div {
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid #dedede;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 56px;
+}
+#sub.choice-movie > .theater section > div h3   {
+    float: left;
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    color: #231f20;
+}
+#sub.choice-movie > .theater section > div h4   {
+    color: #231f20;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+}
+#sub.choice-movie > .theater section > div span {
+    float: right;
+    font-size: 13px;
+    color: #777;
+}
+#sub.choice-movie > .theater section > div p    {
+    float: right;
+    font-size: 13px;
+    color: #777;
+}
+#sub.choice-movie > .theater section > .region p {
+    margin-top: -50px;
+}
+#sub.choice-movie > .theater section > .rank p {
+    margin-left: 30px;
+}
+
+#sub.choice-movie > .theater section > div a.login {
+    float: right;
+    display: block;
+    margin-top: 12px;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    margin-left: 16px;
+    text-align: center;
+    border: 1px solid #999;
+    background: #fff;
+    color: #231f20;
+}
+#sub.choice-movie > .theater section > div a.login::before {
+    background-image: url(../img/ico_btn_login.png);
+    content: "";
+    display: inline-block;
+    height: 13px;
+    width: 11px;
+    position: relative;
+    left: -4px;
+    top: 2px;
+}
+#sub.choice-movie > .theater section > div > article {
+    width: 100%;
+    height: 462px;
+    padding: 5px 20px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sub.choice-movie > .theater section > div > article > h4 {
+    background-image: url(../img/header_gnb_bullet.gif);
+    background-repeat: no-repeat;
+    background-position: left 23px;
+    padding-left: 10px;
+}
+/* 예매 - 왼쪽 영화관 */
+#sub.choice-movie > .theater section > .region {
+    float: left;
+    width: 598px;
+}
+#sub.choice-movie > .theater section > .region ul{}
+#sub.choice-movie > .theater section > .region ul > li {
+    width: 130px;
+    height: 48px;
+}
+#sub.choice-movie > .theater section > .region ul > li > a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    line-height: 40px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .region ul > li.active > a {
+    background: #231f20;
+    color: #fff;
+}
+#sub.choice-movie > .theater section > .region ul ol {
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    display: none;
+    width: 418px;
+    height: 100%;
+}
+#sub.choice-movie > .theater section > .region ul ol.on {
+    display: block;
+}
+#sub.choice-movie > .theater section > .region ul ol > li {
+    float: left;
+    width: 128px;
+    height: 40px;
+    margin-right: 9px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .region ul ol > li > a {
+    display: block;
+    margin-top: 295px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #efefef;
+    background: #efefef;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .region ul ol > li.chk > a {
+    padding: 0 25px;
+    border: 1px solid #999;
+    color: #231f20;
+    font-weight: bold;
+    background: #fff url(../img/bg_check.png) no-repeat 10px 50%;
+}
+/* 예매 - 오른쪽 영화순위 */
+
+#sub.choice-movie > .theater section > .rank {
+    float: right;
+    width: 380px;
+    border-left: 1px solid #c0c0c0;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .theater section > .rank a.on {}
+#sub.choice-movie > .theater section > .rank ul {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    overflow: auto;
+}
+#sub.choice-movie > .theater section > .rank ul > li > a {
+    display: block;
+    width: 240px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+#sub.choice-movie > .theater section > .rank ul .grade {
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    font-size: 0;
+    background-image: url(../img/sprite_bg_grade.png);
+    overflow: hidden;
+}
+#sub.choice-movie > .theater section > .rank ul .gradeAll {
+    background-position: 0px 0;
+}
+#sub.choice-movie > .theater section > .rank ul .grade12  {
+    background-position: -21px 0;
+}
+#sub.choice-movie > .theater section > .rank ul .grade15  {
+    background-position: -42px 0;
+}
+#sub.choice-movie > .theater section > .rank ul .grade18  {
+    background-position: -63px 0;
+}
+#sub.choice-movie > .theater section > .rank ul .grade19  {
+    background-position: -84px 0;
+}
+#sub.choice-movie > .theater section > .rank ul .tit {
+    float: left;
+    display: block;
+    width: 214px;
+    font-size: 14px;
+    margin-left: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #231f20;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 6px;
+}
+/* 예매 - 상영시간 */
+#sub.choice-movie > .showtime {
+    min-height: 554px;
+    background: #fff;
+}
+#sub.choice-movie > .showtime > article{
+    position: relative;
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+#sub.choice-movie > .showtime .info {
+    width: 980px;
+    height: 65px;
+    color: #231f20;
+    font-size: 16px;
+    background: #dad2b4;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .showtime .info > em {
+    font-style: normal;
+    margin-left: 32px;
+}
+#sub.choice-movie > .showtime .info > span {
+    font-weight: bold;
+    margin-left: 24px;
+}
+#sub.choice-movie > .showtime .info > .infoDate {}
+#sub.choice-movie > .showtime .info > .infoTheater {}
+#sub.choice-movie > .showtime .info > .infoMovie {}
+#sub.choice-movie > .showtime section {
+    position: relative;
+    width: 100%;
+    min-height: 489px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .showtime section > h1 {
+    color: #231f20;
+    font-size: 24px;
+}
+#sub.choice-movie > .showtime section > h1 > span {
+    margin-left: 8px;
+    font-size: 13px;
+    color: #777;
+    font-weight: normal;
+}
+#sub.choice-movie > .showtime section > .nodata {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -140px;
+    margin-top: -12px;
+    width: auto;
+    height: 24px;
+    padding-top: 2px;
+    padding-left: 30px;
+    background: url(../img/ico_nodata.png) no-repeat;
+    font-size: 18px;
+    color: #777;
+    box-sizing: border-box;
+}
+#sub.choice-movie > .showtime .banner {}
+
+
+footer {
+    display: block;
+}
+footer > .banner1 {
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+footer > .banner1 img{
+    margin-top: -1px;
+}
+footer > .banner2 {
+    height: 196px;
+    margin-top: 64px;
+    background-color: rgb(0, 92, 185);
+    
+}
+footer > .banner2 a {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+}
+footer > .banner2 img {
+    position: absolute;
+    top: -44px;
+    left: 462px;
+}
