@@ -150,4 +150,61 @@
     background: url(../img/btn_total_prev.png) no-repeat;
 }
 
-#sub.order-confirm > section > .total-price {}
+#sub.order-confirm > section > .total-price {
+    height: 268px;
+}
+#sub.order-confirm > section > .total-price > div {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    padding: 30px;
+    border-right: 1px solid #515151;
+    box-sizing: border-box;
+}
+#sub.order-confirm .total-price > div:first-child {
+    border-left: 1px solid #515151;
+}
+#sub.order-confirm .total-price span {
+    display: block;
+    margin-bottom: 16px;
+    color: #cdc197;
+    font-size: 14px;
+    font-weight: bold;
+}
+#sub.order-confirm .total-price p {
+    color: #a7a9ac;
+    font-size: 14px;
+    overflow: hidden;
+}
+#sub.order-confirm .total-price p > strong {
+    font-weight: normal;
+}
+#sub.order-confirm .total-price p > em {
+    float: right;
+    color: #fff;
+    font-style: normal;
+}
+#sub.order-confirm .total-price h5 {
+    float: right;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 100px;
+}
+#sub.order-confirm .total-price h5 > em {
+    font-style: normal;
+}
+
+#sub.order-confirm > section > .total-price > .order {}
+#sub.order-confirm > section > .total-price > .discount {}
+#sub.order-confirm > section > .total-price > .pay {}
+
+#sub.order-confirm .total-price > .pay > h4 {
+    float: right;
+    font-size: 40px;
+    color: #fff;
+}
+#sub.order-confirm .total-price > .pay > h4 > i {
+    font-size: 24px;
+    font-style: normal;
+}

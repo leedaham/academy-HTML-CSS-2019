@@ -134,6 +134,14 @@
         }
         header > .gnb ul > li:last-child {border: none;}
 
+        header > .gnb ul > li.on > a {
+            padding-bottom: 13px;
+            background-image: url(../img/header_gnb_bullet.gif);
+            background-repeat: no-repeat;
+            background-position: center 24px;
+            font-weight: bold;
+        }
+
         header > .gnb ul > li > a {
             display: block;
             width: 100%;
