@@ -1,0 +1,353 @@
+/* 로그인 페이지(login.html) */
+#sub.login {}
+#sub.login > section {
+    width: 100%;
+    min-height: 638px;
+    margin-bottom: 36px;
+    background: #f9f6ec;
+}
+#sub.login > section > div {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px;
+    box-sizing: border-box;
+}
+#sub.login > section > div > h1 {
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: #231f20;
+}
+#sub.login > section > div > article {
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#sub.login > section > div > article > .tab_btn {
+    width: 100%;
+    height: 53px;
+    overflow: hidden;
+}
+#sub.login > section > div > article > .tab_btn > li {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+#sub.login > section > div > article > .tab_btn > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-bottom: 1px solid #24221f;
+    text-align: center;
+    font-size: 14px;
+    color: #35383d;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+#sub.login .tab_btn > li:last-child > a {
+    border-right: 1px solid #dedede;
+}
+#sub.login > section > div > article > .tab_btn > li.on {}
+#sub.login > section > div > article > .tab_btn > li.on > a {
+    border-top: 3px solid #231f20;
+    border-left: 1px solid #231f20;
+    border-right: 1px solid #231f20;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    color: #35383d;
+}
+#sub.login > section > div > p {
+    width: 100%;
+    height: 82px;
+    padding: 25px 0;
+    background: #efebdb;
+    text-align: center;
+    line-height: 32px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+#sub.login > section > div > p > a {
+    display: inline-block;
+    width: 90px;
+    line-height: 30px;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    margin-left: 6px;
+    font-size: 13px;
+    color: #231f20;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sub.login .tab {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+#sub.login .tab > div {
+    width: 100%;
+    display: none;
+}
+#sub.login .tab > div.on {
+    display: block;
+}
+#sub.login .tab > .tab1 {}
+#sub.login .tab > .tab1 > form {
+    display: inline-block;
+    margin-top: 60px;
+    overflow: hidden;
+}
+#sub.login .tab > .tab1 > form > div {
+    float: left;
+}
+#sub.login .tab > .tab1 > form label {
+    display: block;
+    margin-bottom: 10px;
+}
+#sub.login .tab > .tab1 > form label > span {
+    display: inline-block;
+    width: 89px;
+    height: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #353535;
+}
+#sub.login .tab > .tab1 > form label > input {
+    width: 253px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #dedede;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+#sub.login .tab > .tab1 > form > input {
+    float: left;
+    width: 98px;
+    height: 90px;
+    padding-top: 38px;
+    margin-left: 6px;
+    text-align: center;
+    font-size: 14px;
+    color: #e5e1b0 !important;
+    background: #231f20 url(../img/ico_login.png) no-repeat 50% 19px;
+}
+#sub.login .tab > .tab1 > p {
+    display: block;
+    width: 450px;
+    padding: 20px 0 40px;
+    font-size: 14px;
+    color: #231f20;
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    box-sizing: border-box;
+}
+#sub.login .tab > .tab1 > p > label {}
+#sub.login .tab > .tab1 > p > label > input {
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+#sub.login .tab > .tab1 > p > a {
+    display: inline-block;
+    width: 116px;
+    height: 16px;
+    margin-left: 40px;
+    background-image: url(../img/ico_right_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+#sub.login .tab > .tab1 > img {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+
+
+#sub.login .tab > .tab2 {}
+#sub.login .tab > .tab2 > .kakao_banner {margin-top: 46px;}
+#sub.login .tab > .tab2 > p {
+    color: #666;
+    line-height: 18px;
+    padding: 36px 0;
+}
+#sub.login .tab > .tab2 > textarea {
+    width: 100%;
+    height: 167px;
+    margin-bottom: 0;
+    padding: 20px;
+    border: 1px solid #dedede;
+    overflow-y: auto;
+    background: #f9f6ec;
+    font-size: 14px;
+    color: #666;
+    box-sizing: border-box;
+    text-align: left;
+    resize: none;
+}
+#sub.login .tab > .tab2 > .agree {
+    display: inline-block;
+    padding: 26px 0;
+    font-size: 14px;
+    color: #231f20;
+}
+#sub.login .tab > .tab2 > .agree > input {
+    margin-right: 4px;
+    vertical-align: bottom;
+}
+}
+#sub.login .tab > .tab2 > div {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 26px;
+    box-sizing: border-box;
+}
+#sub.login .tab > .tab2 > div > p {
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+#sub.login .tab2 > div > form {}
+#sub.login .tab2 > div > form > div {}
+#sub.login .tab2 > div > form > div > label {
+    display: block;
+    margin-bottom: 10px;
+}
+#sub.login .tab2 > div > form > div > label > span {
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #353535;
+}
+#sub.login .tab2 > div > form > div > label > input {
+    width: 253px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #dedede;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+#sub.login .tab2 > div > form > div > .name {}
+#sub.login .tab2 > div > form > div > .name > span {}
+#sub.login .tab2 > div > form > div > .name > input {
+    width: 326px;
+}
+
+#sub.login .tab2 > div > form > div > label > select {
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -3px;
+    padding: 10px 0;
+    border: 1px solid #e8e8e8;
+    font-size: 12px;
+    color: #555;
+    vertical-align: middle;
+}
+#sub.login .tab2 > div > form > div > .hp {}
+#sub.login .tab2 > div > form > div > .hp > span {}
+#sub.login .tab2 > div > form > div > .hp > select {}
+#sub.login .tab2 > div > form > div > .hp > select > option {}
+#sub.login .tab2 > div > form > div > .hp > input {
+    width: 100px;
+}
+
+#sub.login .tab2 > div > form > div > .birth {}
+#sub.login .tab2 > div > form > div > .birth > span {}
+#sub.login .tab2 > div > form > div > .birth > select {}
+#sub.login .tab2 > div > form > div > .birth > select > option {}
+
+#sub.login .tab2 > div > form > div > .pass {
+    display: inline-block;
+}
+#sub.login .tab2 > div > form > div > .pass > span {
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #353535;
+}
+#sub.login .tab2 > div > form > div > .pass > input {
+    width: 100px;
+}
+#sub.login .tab2 > div > form > div > .pass1 {}
+#sub.login .tab2 > div > form > div > .pass2 {}
+
+#sub.login .tab2 > div > form > input[type=submit] {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 0px 10px;
+    border: 1px solid #231f20;
+    background: #231f20;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e5e1b0;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#sub.login .tab2 .banner {
+    position: absolute;
+    right: 0px;
+    bottom: 70px;
+}
+
+
+#sub.login .tab > .tab3 {
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+#sub.login .tab > .tab3 > p {}
+#sub.login .tab > .tab3 > a {
+    display: inline-block;
+    width: 220px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding-left: 44px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background: #18c718 url(../img/ico_naver.gif) no-repeat 0 0;
+    border: 1px solid #0fa600;
+}
+#sub.login .tab > .tab3 > a > span {
+    padding-left: 30px;
+    border-left: 1px solid #0fa600;
+}
+#sub.login .tab > .tab3 > div {
+    width: 260px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+#sub.login .tab > .tab3 > div > a {
+    display: inline-block;
+    width: 116px;
+    height: 16px;
+    background-image: url(../img/ico_right_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+    font-size: 14px;
+    color: #231f20;
+    text-align: center;
+    box-sizing: border-box;
+}
+#sub.login .tab > .tab3 > .banner {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
