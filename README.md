@@ -133,3 +133,11 @@ https://www.lottecinema.co.kr/ example practice
 4-9. CSS 레이아웃 설계
 
 4-10. CSS 연습문제
+
+**[farmstory](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/farmstory)**
+
+http://wppremium02.hubweb.net/ 실습
+
+**[jcinema](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/jcinema)**
+
+https://www.lottecinema.co.kr/ 실습
