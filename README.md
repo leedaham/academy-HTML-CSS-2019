@@ -2,7 +2,7 @@
 
 ### 📆 *2019.10 - 2019.12*
 
-📘 윤인성, *[『모던웹을 위한 HTML5+CSS3 바이블』](http://www.hanbit.co.kr/store/books/look.php?p_code=B8371709349)*, 한빛미디어
+📘 윤인성, **[『모던웹을 위한 HTML5+CSS3 바이블』](http://www.hanbit.co.kr/store/books/look.php?p_code=B8371709349)**, 한빛미디어
 
 # English
 
