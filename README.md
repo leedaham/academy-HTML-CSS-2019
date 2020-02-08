@@ -72,7 +72,7 @@
 
 [**jcinema**](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/jcinema)
 
-[http://wppremium02.hubweb.net/](http://wppremium02.hubweb.net/) example practice
+[https://www.lottecinema.co.kr](https://www.lottecinema.co.kr) example practice
 
 # Korean
 
@@ -142,4 +142,4 @@
 
 [**jcinema**](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/jcinema)
 
-[http://wppremium02.hubweb.net/](http://wppremium02.hubweb.net/) 실습
+[https://www.lottecinema.co.kr](https://www.lottecinema.co.kr) 실습
