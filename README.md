@@ -64,6 +64,14 @@
 
 4-10. CSS practice
 
+**[farmstory](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/farmstory)**
+
+http://wppremium02.hubweb.net/ example practice
+
+**[jcinema](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/jcinema)**
+
+https://www.lottecinema.co.kr/ example practice
+
 # Korean
 
 **[Ch01](https://github.com/leedaham/academy-HTML-CSS-2019/tree/master/ch01)**
